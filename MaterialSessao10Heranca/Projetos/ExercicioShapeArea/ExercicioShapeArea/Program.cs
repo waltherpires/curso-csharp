@@ -9,7 +9,7 @@ namespace ExercicioShapeArea
         static void Main(string[] args)
         {
             List<Shape> list = new List<Shape>();
-
+             
             Console.Write("Enter the number of shapes:");
             int n = int.Parse(Console.ReadLine());
 

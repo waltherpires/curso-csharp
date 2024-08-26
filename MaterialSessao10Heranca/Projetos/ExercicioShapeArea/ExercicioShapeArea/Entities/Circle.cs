@@ -12,8 +12,6 @@ namespace ExercicioShapeArea.Entities
     {
         public double Radius { get; set; }
 
-        public Circle() { }
-
         public Circle(Color color, double radius) : base(color)
         {
             Radius = radius;
@@ -21,7 +19,7 @@ namespace ExercicioShapeArea.Entities
 
         public override double Area()
         {
-            return Radius*Radius*double.Pi;
+            return Math.PI * Radius * Radius;
         }
     }
 }
