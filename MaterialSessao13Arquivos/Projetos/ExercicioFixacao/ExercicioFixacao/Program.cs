@@ -41,7 +41,6 @@ namespace ExercicioFixacao
                 Console.WriteLine("An error occurred");
                 Console.WriteLine(e.Message);
             }
-
         }
     }
 }
