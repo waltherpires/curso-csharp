@@ -1,11 +1,13 @@
-﻿namespace ExercicioPropostoDictionary
+﻿using System.IO;
+using System.Collections.Generic;
+
+namespace ExercicioPropostoDictionary
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             
-
             Console.Write("Enter file full path:");
             string path = Console.ReadLine();
 
