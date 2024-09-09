@@ -2,7 +2,7 @@
 
 namespace IntroDelegates
 {
-    delegate double BinaryNumericOperation(double n1, double n2);
+    delegate void BinaryNumericOperation(double n1, double n2);
     internal class Program
     {
         static void Main(string[] args)
@@ -10,13 +10,9 @@ namespace IntroDelegates
             double a = 10;
             double b = 12;
 
-            BinaryNumericOperation op = CalculationService.Sum;
-            BinaryNumericOperation op2 = CalculationService.Max;
-
-            double result = op(a, b);
-            Console.WriteLine(result);
-            result = op2(a, b);
-            Console.WriteLine(result);
+            BinaryNumericOperation op = CalculationService.ShowSum;
+            op += CalculationService.ShowMax;
+            op(a, b);
         }
     }
 }
